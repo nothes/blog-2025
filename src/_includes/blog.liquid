@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1> {{title}} </h1>
+    <p>by: {{ author }}, {{ date | date: "%a, %b %d, %Y"}}</p>
+<!-- 
+    <p>tags: {{tags | join: ", "}}
+ -->
+    {% for tag in tags %}
+     <a href="{{siteURL}}/tags/{{ tag }}">{{ tag }}</a>{% if not forloop.last %}, {% endif %}
+     {% endfor %}
+     </p>
+  {{ content }}
+ 
+ <!-- end matter -->
+<!-- 
+  <nav>
+ -->
+	{% for link in navlinks %}
+	<a href="{{ link.url }}">
+		{{ link.text }}
+	</a>
+	{% endfor %}
+<!-- 
+</nav>
+ -->
+
+</body>
+</html>
+

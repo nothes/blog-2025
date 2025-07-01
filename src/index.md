@@ -1,12 +1,14 @@
 ---
 title: NEW BLOG WHO DIS
-layout: layout.liquid
+layout: main.liquid
 ---
 
-I've not done this whole styling and design in a very long time -- this thing is bound to be ugly for awhile, in the grand tradition of such things. Plz Enjoy, Anyway. :P 
+# Musings And Mumblings 
 
-<ul>
+Now with a worse web-design! I made it myself! I've not done this whole styling and design in a very long time -- this thing is bound to be ugly for awhile, in the grand tradition of such things. Plz Enjoy, Anyway. :P 
+
+
 {% for post in collections.blog %}
-<li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+- [{{ post.data.title }}]( {{ post.url}} )
 {% endfor %}
-</ul>
+
