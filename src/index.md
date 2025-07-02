@@ -1,5 +1,5 @@
 ---
-title: NEW BLOG WHO DIS
+title: Musings and Mumblings
 layout: main.liquid
 ---
 
