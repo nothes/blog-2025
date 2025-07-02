@@ -1,6 +1,9 @@
 ---
 title: Hello, World!
-tags: test
+tags: 
+  - test
+  - demo
+  - exploration
 date: 2025-06-30 00:00:00.00 -7
 ---
 

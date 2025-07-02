@@ -1,5 +1,5 @@
 export default function(eleventyConfig) {
-    eleventyConfig.addGlobalData('siteURL', 'nothe.purplellamas.net');
+    eleventyConfig.addGlobalData('siteURL', 'http://nothe.purplellamas.net');
     eleventyConfig.addGlobalData('testURL', 'localhost:8080');
     eleventyConfig.addGlobalData('imageDir', '/img/');
 
