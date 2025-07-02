@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-<link rel="stylesheet" href="/style.css">
-</head>
-<body>
+---
+layout: main.liquid
+---
     <h1> {{title}} </h1>
     <p>by: {{ author }}, {{ date | date: "%a, %b %d, %Y"}}</p>
 <!-- 
@@ -18,8 +12,3 @@
      </p>
   {{ content }}
  
- <!-- end matter -->
-{% render 'navigation.liquid' navlinks: navlinks %}
-</body>
-</html>
-
