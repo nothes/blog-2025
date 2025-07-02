@@ -19,18 +19,7 @@
   {{ content }}
  
  <!-- end matter -->
-<!-- 
-  <nav>
- -->
-	{% for link in navlinks %}
-	<a href="{{ link.url }}">
-		{{ link.text }}
-	</a>
-	{% endfor %}
-<!-- 
-</nav>
- -->
-
+{% render 'navigation.liquid' navlinks: navlinks %}
 </body>
 </html>
 

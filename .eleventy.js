@@ -1,11 +1,7 @@
 export default function(eleventyConfig) {
-    eleventyConfig.addGlobalData('siteURL', 'https://nothe.purplellamas.net');
+    eleventyConfig.addGlobalData('siteURL', 'nothe.purplellamas.net');
     eleventyConfig.addGlobalData('testURL', 'localhost:8080');
     eleventyConfig.addGlobalData('imageDir', '/img/');
-
-  eleventyConfig.addShortcode("navlinks", function() {
-        return "{% include navigation.liquid %}"
-   });
 
   // Copy `src/style.css` to `_site/style.css`
     eleventyConfig.addPassthroughCopy("src/style.css");
