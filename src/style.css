@@ -40,3 +40,8 @@ body {
 .byline {
     font-size: smaller;
 }
+
+.postTitle {
+    margin-bottom: -1rem;
+}
+
