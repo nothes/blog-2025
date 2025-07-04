@@ -1,7 +1,11 @@
 <nav>
 	{% for link in navlinks %}
-	<a href="{{ link.url }}">
+	<a href="{{ link.url }}"
+	{% if link.type %}
+	    type="{{ link.type }}"
+	 {% endif %}
+	 >
 		{{ link.text }}
-	</a>
+	</a> 
 	{% endfor %}
 </nav>

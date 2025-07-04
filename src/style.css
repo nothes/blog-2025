@@ -2,3 +2,31 @@ body {
   font-family: Arial, Verdana, sans-serif;
   background-color: #D6D6D6
 }
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  /* Typical recommendation is between 1.1 and 1.5 */
+  line-height: 1.3;
+}
+
+body {
+  /* Set the value with rem so that it will scale
+   * appropriately with your font choice and
+   * with font size.
+   *
+   * I fiddled around in dev tools and it looks
+   * like a value between 22rem and 35rem
+   * wraps between 45 and 75 characters, but
+   * play around and see what value you like.
+   * (Can be narrower or wider, this is not a
+   * universal constant of legibility.)
+   */
+  max-width: 35rem;
+  padding-inline: 1rem;
+
+  /* Centers the body horizontally on the page. (Optional.)*/
+  margin-inline: auto;
+}

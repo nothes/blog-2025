@@ -2,5 +2,6 @@
     {"text": "Home", "url": "/"},
 	{"text": "About", "url": "/about/"},
 	{"text": "Twitch", "url": "https://twitch.tv/nothes/"},
-	{"text": "Mastodon", "url": "https://notacult.social/@nothe"}
+	{"text": "Mastodon", "url": "https://notacult.social/@nothe"},
+	{"text": "RSS", "url": "/feed.xml", "type": "application/atom+xml"}
 ]

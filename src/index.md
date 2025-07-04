@@ -12,3 +12,4 @@ Now with a worse web-design! I made it myself! I've not done this whole styling 
 - [{{ post.data.title }}]( {{ post.url}} )
 {% endfor %}
 
+[Browse by tag](/tags/)

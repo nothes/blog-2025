@@ -7,7 +7,9 @@ layout: main.liquid
     <p>tags: {{tags | join: ", "}}
  -->
     {% for tag in tags %}
-     <a href="{{siteURL}}/tags/{{ tag }}">{{ tag }}</a>{% if not forloop.last %}, {% endif %}
+    {% if tag != "blog" %}
+         <a href="{{siteURL}}/tags/{{ tag }}">{{ tag }}</a>{% if not forloop.last %}, {% endif %}
+         {% endif %}
      {% endfor %}
      </p>
   {{ content }}
