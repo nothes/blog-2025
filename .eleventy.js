@@ -1,16 +1,14 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
-let siteURL = 'http://nothe.purplellamas.net'
+let siteURL = 'https://nothe.purplellamas.net'
 
 export default function(eleventyConfig) {
     eleventyConfig.addGlobalData('siteURL', siteURL);
-    eleventyConfig.addGlobalData('testURL', 'localhost:8080');
     eleventyConfig.addGlobalData('imageDir', '/img/');
-//     eleventyConfig.addGlobalData('tagsList', Object.keys(collections)) 
 
   // Copy `src/style.css` to `_site/style.css`
     eleventyConfig.addPassthroughCopy("src/style.css");
 	eleventyConfig.addPassthroughCopy("img/");
-    eleventyConfig.setServerPassthroughCopyBehavior("passthrough"); //this makes it so it doesn't actually copy the img files, when running with the test server, it just links the direct ones; only when using --serve 
+//    eleventyConfig.setServerPassthroughCopyBehavior("passthrough"); //this makes it so it doesn't actually copy the img files, when running with the test server, it just links the direct ones; only when using --serve 
  
  // rss feed genration
    eleventyConfig.addPlugin(feedPlugin, {
@@ -23,7 +21,7 @@ export default function(eleventyConfig) {
         metadata: {
             language: "en",
             title: "Musings And Mumblings",
-            subtitle: "The personal blog of Rachael Worthington. Covers slice of life, crafting, plants, and whatever has caught my attention, that day!",
+            subtitle: "The personal blog of Rachael Worthington. Covers slice of life, crafting, plants, and whatever has caught my attention that day!",
             base: siteURL,
             author: {
                 name: "Rey",
