@@ -5,24 +5,8 @@ layout: main.liquid
 <!-- this is the tag index list-->
 # Tags
 
-
-
-
-NO FILTERS
-{% assign collectionKeys = collections | getKeys %}
-all the keys: {{collectionKeys}}
-
-{% for someTag in collections  %}
-{{ someTag }}
-{% for item in someTag %}
-{{ item }}
+{% assign collectionKeys = collections | getKeys | filterTags | sortAlphabetically %}
+{% for tag in  collectionKeys %}
+{% capture tagUrl %}/tags/{{ tag }}/{% endcapture %}
+	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
 {% endfor %}
-{% endfor %}
-
-
-GET KEYS FILTER
-{% for tag in collections | getKeys %}
-{{ tag }} 
-{% endfor %}
-
-

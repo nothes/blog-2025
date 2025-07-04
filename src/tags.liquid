@@ -3,7 +3,9 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter: blog
+  filter: 
+    - blog
+    - all
 permalink: "tags/{{ tag | slugify }}/"
 layout: main.liquid
 ---
