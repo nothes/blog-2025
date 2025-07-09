@@ -3,7 +3,8 @@ title: Musings and Mumblings
 layout: main.liquid
 ---
 
-{% for post in collections.blog %}
+{% assign blogs = collections.blog | reverse %}
+{% for post in blogs  %}
 
 [{{ post.data.title }}]( {{ post.url}} ) <span class="byline">
 {{ post.data.date | date_to_string: "ordinal", "US"  }}
