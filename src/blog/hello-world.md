@@ -17,4 +17,7 @@ and there's multiple lines! and a list!
 
 plus a pretty picture! 
 
-![Very Pretty, Much Picture]({{imageDir}}IMG_3839.jpg)
+<figure>
+<img src="{{imageDir}}IMG_3839.jpg" alt="a misty tree">
+<figcaption>Very Pretty, Much Picture</figcaption>
+</figure>
