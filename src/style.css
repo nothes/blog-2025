@@ -45,3 +45,56 @@ body {
     margin-bottom: -1rem;
 }
 
+.headerImage {
+	/* Ensures we don't end up with any trailing whitespace that
+	 * might cause horizontal overflow.
+	 */
+	display: block;
+
+	/* Set the max-width to 120% of the container width so that
+	 * the image is allowed to overflow its container.
+	 */
+	max-width: 120%;
+
+	/* Set the width of the image to the width of the viewport.
+	 * The vw unit stands for "viewport width" 1vw is 1% of the
+	 * width of the viewport. Setting the width of the image to
+	 * 100vw ensures that the image is as wide as the viewport,
+	 * but doesn't overflow the viewport (creating a scrollbar).
+	 * Since max-width is 120%, the image will never get larger
+	 * than 120% of the container width, so as long as the
+	 * viewport is smaller than 120% of the container, the image
+	 * will fill the screen.
+	 */
+	width: 100vw;
+
+	/* The next three rules pull the image to the left so that
+	 * it is centered over the container - sticking out equally
+	 * to either side. The gist of the technique is to shift the
+	 * image to the right by 50% of the container's width, and
+	 * shift it back to the left by 50% of its own width.
+	 */
+
+	/* We need relative positioning so we can push the image
+	 * around relative to the position the browser would give
+	 * it by default.
+	 */
+	position: relative;
+
+	/* This shifts the image to the right so that it's left edge
+	 * is at the horizontal midpoint of the container. For
+	 * positioning like this, a percentage refers to the dimensions
+	 * of the container. Hence, left: 50% means the middle of the
+	 * container.
+	 */
+	left: 50%;
+
+	/* This pulls the image back to the left, but in the case of
+	 * translations like this, the percentage refers to the
+	 * transformed element's dimensions, not the container's
+	 * dimensions. So translatex(-50%) moves the image back to
+	 * left by 50% of the image width (not 50% of the container
+	 * width).
+	 */
+	transform: translatex(-50%);
+}}
