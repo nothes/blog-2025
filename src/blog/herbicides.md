@@ -9,7 +9,10 @@ date: 2025-07-19 00:00:00.00 -7
 
 ...and I feel so guilty about it. I really loathe the idea of dumping a bunch of chemicals into my yard. I _want_ plants to thrive there, and I _don't_ want local creatures (or me!) to get sick. But... I have a mortal enemy. It's name is bindweed.
 
-![I wasn't kidding about it eating the hose.]({{imageDir}}/yard/hose.jpg)
+<figure>
+<img src="{{imageDir}}yard/hose.jpg" alt="a small backyard with the house on the right, a waist-high retaining wall on the left, and in the center, nothing but a wall of green arrow-shaped leaves. A lump on the wall of the house is vaguely hose-shaped.">
+<figcaption>I wasn't kidding about it eating the hose.</figcaption>
+</figure>
 
 The stuff is rampant here in Seattle, and it looks like morning glory. In fact they're both part of the same species, Convolvulaceae. Morning glory is a catch-all term, and both the plant I'm fighting - hedge bindweed, and the even _worse_ field bindweed are plants within that umbrella. They are both EVIL. They can grow back from as little as one centimeter of root left behind if you dig them up. The variety I've been dealing with has been making a very impressive effort to choke out an entire Japanese maple tree. It climbs EVERYTHING. It legitimately ate my hose. 
 
@@ -22,7 +25,10 @@ To add insult to injury, I live next to a 1960's era apartment building with lik
 
 So, I've finally given in, and bought a whole gallon of Roundup. I was standing in the aisle in my local Lowes, last night, trying to read tags and match up active ingredients... it was enough to make me thankful I am not a chemist, I will tell you all that much! I should've brought a magnifying glass, too. The active ingredients are all labelled in like 6 point font, and I need new glasses. Ugh. I waffled, staring at all the bottles and brands, about buying such a big jug, but decided I'd be ticked off if I ran out early, and I'm glad I did. The gallon _ran out_, just as I ran out of weeds to spray. 
 
-![The volunteer ferns are along the left here, I swear.]({{imageDir}}/yard/side.jpg)
+<figure>
+<img src="{{imageDir}}yard/side.jpg" alt="looking down the side yard of a townhome, about 6 feet from wall to fence, the entire length of the side yard is full of green arrow-shaped leaves, among other weeds.">
+<figcaption>The volunteer ferns are along the left here, I swear.</figcaption>
+</figure>
 
 (this is just before I pulled a TON of weeds out, a month or so ago. Like I said, depression can be a bitch, and I lost all of my maintenance gains last year.)
 
