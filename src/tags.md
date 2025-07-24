@@ -8,5 +8,5 @@ layout: main.liquid
 {% assign collectionKeys = collections | getKeys | filterTags | sortAlphabetically %}
 {% for tag in  collectionKeys %}
 {% capture tagUrl %}/tags/{{ tag }}/{% endcapture %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+	<li><a href="{{ tagUrl | slugify }}" class="post-tag">{{ tag }}</a></li>
 {% endfor %}
