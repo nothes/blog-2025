@@ -44,7 +44,7 @@ export default function(eleventyConfig) {
 		(strings || []).sort((b, a) => b.localeCompare(a))
 	);
 
-	eleventyConfig.addShortcode('excerpt', post => extractExcerpt(post));
+	eleventyConfig.addShortcode('excerpt', extractExcerpt);
 
 	function extractExcerpt(post) {
 		if(!post.templateContent) return '';

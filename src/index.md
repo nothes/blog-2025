@@ -1,9 +1,14 @@
 ---
 title: Musings and Mumblings
 layout: main.liquid
+
+pagination: 
+    data: collections.blog
+    size: 20
+    reverse: true
 ---
 
-{% assign blogs = collections.blog | reverse %}
+{% assign blogs = pagination.items %}
 {% for post in blogs  %}
 
 [{{ post.data.title }}]( {{ post.url}} ) <span class="byline">
@@ -17,5 +22,7 @@ layout: main.liquid
 </span>
 
 {% endfor %}
+
+<a href="{{ pagination.href.first }}">First</a> <a href="{{ pagination.href.previous }}">Previous</a> <a href="{{ pagination.href.next }}">Next</a> <a href="{{ pagination.href.last }}">Last</a>
 
 [Browse by tag](/tags/)
